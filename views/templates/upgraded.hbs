@@ -1,0 +1,31 @@
+{{mail-token '1' 'value'}} <!-- header -->
+
+<span style="font-size:18px;">Dear {{CustomerAccost}},</span><br />
+Your order # <strong>{{InvoiceNumber}}</strong> has been completed.<br/>
+<br/>
+
+<div style="margin-left : 20pt; background-color:#E8E8E8">
+    {{#each Items}}
+          {{product ProductId 'support-text'}}
+    {{/each}}
+</div><br/>
+ 
+ {{SupportText}}
+
+You may track the status of your current order at your 
+<a href="{{autologin CustomerId}}">account page</a>
+
+
+
+{{mail-token '10' 'value'}} <!-- waranty -->
+
+{{mail-token '11' 'value'}} <!-- contact us -->
+
+<!-- end content -->
+
+{{mail-token '12' 'value'}}
+<hr>
+
+{{mail-token '7' 'value'}} <!-- commercial -->
+{{mail-token '8' 'value'}} <!-- other projects --><br />
+{{mail-token '2' 'value'}} <!-- footer -->
